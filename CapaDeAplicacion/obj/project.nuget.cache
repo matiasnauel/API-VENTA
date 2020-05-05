@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Y7WFLx7M+AhlTY9rJOghOtmNvx/k6UHCzdmNMhG2tEiQfjEE+vq3kfO+Z/D6vmVv9DZdStYg1gQRSaUuZ2klvg==",
+  "dgSpecHash": "An5MB+OH+T36IKLikpMzPVXQNv1a6EtdrFcOQ2Ej+PQ9yvBcx11r2ogwdCtUMDi6cHBZCp7ErxU/hcsIaknYOQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\ayala\\source\\repos\\matiasnauel\\API-VENTA\\CapaDeAplicacion\\CapaDeAplicacion.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ayala\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

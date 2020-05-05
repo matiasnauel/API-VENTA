@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/p4H+45LM28jD7xNXbrBCywONSLlGITA5n4PACHxdTsnbtU6nw++Lb4gFivefVGcGYPRyidaavfsPG/ludgukg==",
+  "dgSpecHash": "U2L6MTG5xcPLXpPD21f9QderE+tTr3DOYD8D6PVmfXJHGz9m2JV97GKzrrLl7UOvvtzfeg0jpxEQmeeFfWsO1Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\ayala\\source\\repos\\matiasnauel\\API-VENTA\\API-Venta\\API-Venta.csproj",
   "expectedPackageFiles": [
@@ -50,7 +50,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\ayala\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\nuget.frameworks\\4.7.0\\nuget.frameworks.4.7.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

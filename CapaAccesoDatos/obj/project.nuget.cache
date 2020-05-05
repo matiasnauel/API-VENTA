@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wpQvlNbGFjHyFvcOrmVdG726CBOS++XpYoBXXGnv/dFzxfG9fRsn+UyTR50W3TXre4PQee5KtZFeX3z8xIxm9Q==",
+  "dgSpecHash": "7RBgxRqDBsSIta1GRjDjxVW8VkEGnAWfSIURoTO57cvNK6IYPzeUUqZ3l9FA5yE151/WJ3ppp5X3bMJaY65fyA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ayala\\source\\repos\\matiasnauel\\API-VENTA\\CapaAccesoDatos\\CapaAccesoDatos.csproj",
   "expectedPackageFiles": [
@@ -30,6 +30,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
+    "C:\\Users\\ayala\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

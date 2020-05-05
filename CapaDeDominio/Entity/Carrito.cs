@@ -19,5 +19,6 @@ namespace CapaDeDominio.Entity
         public int CantidadProducto { get => cantidadProducto; set => cantidadProducto = value; }
 
         public virtual ICollection<Venta> VentaNavigator { get; set; }
+        public virtual ICollection<Producto> ProductoNavigator { get; set; }
     }
 }
