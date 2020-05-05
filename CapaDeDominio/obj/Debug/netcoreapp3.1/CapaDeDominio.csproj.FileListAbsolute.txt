@@ -1,0 +1,9 @@
+C:\Users\ayala\source\repos\matiasnauel\API-VENTA\CapaDeDominio\bin\Debug\netcoreapp3.1\CapaDeDominio.deps.json
+C:\Users\ayala\source\repos\matiasnauel\API-VENTA\CapaDeDominio\bin\Debug\netcoreapp3.1\CapaDeDominio.dll
+C:\Users\ayala\source\repos\matiasnauel\API-VENTA\CapaDeDominio\bin\Debug\netcoreapp3.1\CapaDeDominio.pdb
+C:\Users\ayala\source\repos\matiasnauel\API-VENTA\CapaDeDominio\obj\Debug\netcoreapp3.1\CapaDeDominio.csprojAssemblyReference.cache
+C:\Users\ayala\source\repos\matiasnauel\API-VENTA\CapaDeDominio\obj\Debug\netcoreapp3.1\CapaDeDominio.csproj.CoreCompileInputs.cache
+C:\Users\ayala\source\repos\matiasnauel\API-VENTA\CapaDeDominio\obj\Debug\netcoreapp3.1\CapaDeDominio.AssemblyInfoInputs.cache
+C:\Users\ayala\source\repos\matiasnauel\API-VENTA\CapaDeDominio\obj\Debug\netcoreapp3.1\CapaDeDominio.AssemblyInfo.cs
+C:\Users\ayala\source\repos\matiasnauel\API-VENTA\CapaDeDominio\obj\Debug\netcoreapp3.1\CapaDeDominio.dll
+C:\Users\ayala\source\repos\matiasnauel\API-VENTA\CapaDeDominio\obj\Debug\netcoreapp3.1\CapaDeDominio.pdb

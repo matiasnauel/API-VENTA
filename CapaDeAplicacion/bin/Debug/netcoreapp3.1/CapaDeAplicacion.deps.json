@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "CapaDeAplicacion/1.0.0": {
+        "dependencies": {
+          "CapaDeDominio": "1.0.0"
+        },
+        "runtime": {
+          "CapaDeAplicacion.dll": {}
+        }
+      },
+      "CapaDeDominio/1.0.0": {
+        "runtime": {
+          "CapaDeDominio.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CapaDeAplicacion/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CapaDeDominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
