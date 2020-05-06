@@ -15,16 +15,12 @@ namespace API_Venta.Controllers
     [ApiController]
     public class DestinoVentaController : ControllerBase
     {
-        private readonly IDestinoVentaService _service;
-        public DestinoVentaController(IDestinoVentaService service)
+        private readonly IDestinoVentas _service;
+        public DestinoVentaController(IDestinoVentas service)
         {
             _service = service;
 
         }
-        [HttpPost]
-        public DestinoVentaService Post(DestinoVentasDTOs destino)
-        {
-            return _service.CrearDestinoDatos(destino);
-        }
+       
     }
 }

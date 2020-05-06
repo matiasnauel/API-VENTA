@@ -6,12 +6,15 @@ namespace CapaDeDominio.DTOs
 {
   public  class EstadoDTOs
     {
-        private string nombre;
-        private int id_ventaReclamo;
-        private int tipoestado;
 
-        public string Nombre { get => nombre; set => nombre = value; }
-        public int Id_ventaReclamo { get => id_ventaReclamo; set => id_ventaReclamo = value; }
-        public int Tipoestado { get => tipoestado; set => tipoestado = value; }
+        public string nombre{get;set;}
+
+        public int id_ventaReclamo{get;set;}
+
+        public int tipoestado{get;set;}
+
+        public virtual ICollection<TipoEstado> TipoEstadoNavigator { get; set; }
+
+        public virtual ICollection<VentaReclamo> VentaReclamoNavigator { get; set; }
     }
 }

@@ -23,11 +23,11 @@ namespace CapaDeAplicacion.Services
         {
             var entity = new Carrito()
             {
-                
-                Id_producto = carrito.Id_producto,
-                Id_venta = carrito.Id_venta,
-                Valorcarrito = carrito.Valorcarrito,
-                CantidadProducto =carrito.CantidadProducto
+                id = Guid.NewGuid(),
+                id_producto = carrito.id_producto,
+                id_venta = carrito.id_venta,
+                valorcarrito = carrito.valorcarrito,
+                cantidadProducto =carrito.cantidadProducto
 
 
             

@@ -2,11 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CapaDeDominio.DTOs
+namespace CapaDeAplicacion.Services
 {
-    public class TipoEstadoDTOs
+    class ProductoService
     {
-       
-
     }
 }
