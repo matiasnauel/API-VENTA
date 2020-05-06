@@ -6,8 +6,7 @@ namespace CapaDeDominio.DTOs
 {
     class VentaReclamoDTOs
     {
-        private string reclamo;
-
-        public string Reclamo { get => reclamo; set => reclamo = value; }
+       
+        public string reclamo{get;set;}
     }
 }
