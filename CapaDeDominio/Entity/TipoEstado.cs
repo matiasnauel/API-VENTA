@@ -6,8 +6,7 @@ namespace CapaDeDominio.Entity
 {
    public class TipoEstado
     {
-        private int id;
+        public Guid id {get;set;}
 
-        public int Id { get => id; set => id = value; }
     }
 }

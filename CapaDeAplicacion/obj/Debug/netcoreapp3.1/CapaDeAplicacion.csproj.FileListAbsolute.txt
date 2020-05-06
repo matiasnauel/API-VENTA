@@ -9,3 +9,5 @@ C:\Users\ayala\source\repos\matiasnauel\API-VENTA\CapaDeAplicacion\obj\Debug\net
 C:\Users\ayala\source\repos\matiasnauel\API-VENTA\CapaDeAplicacion\obj\Debug\netcoreapp3.1\CapaDeAplicacion.csproj.CopyComplete
 C:\Users\ayala\source\repos\matiasnauel\API-VENTA\CapaDeAplicacion\obj\Debug\netcoreapp3.1\CapaDeAplicacion.dll
 C:\Users\ayala\source\repos\matiasnauel\API-VENTA\CapaDeAplicacion\obj\Debug\netcoreapp3.1\CapaDeAplicacion.pdb
+C:\Users\Geet\Source\Repos\matiasnauel\API-VENTA\CapaDeAplicacion\obj\Debug\netcoreapp3.1\CapaDeAplicacion.dll
+C:\Users\Geet\Source\Repos\matiasnauel\API-VENTA\CapaDeAplicacion\obj\Debug\netcoreapp3.1\CapaDeAplicacion.pdb

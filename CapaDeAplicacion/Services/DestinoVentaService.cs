@@ -1,35 +1,32 @@
-﻿using CapaDeDominio.Commands;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using CapaDeDominio.Commands;
 using CapaDeDominio.DTOs;
 using CapaDeDominio.Entity;
-using System;
-using System.Collections.Generic;
-using System.Linq.Expressions;
-using System.Text;
 
 namespace CapaDeAplicacion.Services
 {
-    public interface IDestinoVentaService
+    public interface IDestinoVentas
     {
-        CapaDeDominio.Entity.DestinoVentaService CrearDestinoDatos(DestinoVentasDTOs Destinodat);
+        DestinoVenta CrearDestino(DestinoVentasDTOs destino);
     }
-    class DestinoVentaService : IDestinoVentaService
+    public class DestinoVentaService : IDestinoVentas
     {
-        private readonly IGenericsRepository _Repository;
+        private readonly IGenericsRepository _repository;
 
         public DestinoVentaService(IGenericsRepository repositorio)
         {
-            _Repository = repositorio;
+            _repository = repositorio;
         }
-        public CapaDeDominio.Entity.DestinoVentaService CrearDestinoDatos(DestinoVentasDTOs Destinodat)
+        public DestinoVenta CrearDestino(DestinoVentasDTOs destino)
         {
-            var entity = new CapaDeDominio.Entity.DestinoVentaService()
-            {
-                Destino = Destinodat.Destino,
-                Nombre = Destinodat.Nombre,
-                Descripcion = Destinodat.Descripcion
+            var entity = new DestinoVenta(){
+
+                id = Guid.NewGuid(),
+
             };
-            _Repository.Add<CapaDeDominio.Entity.DestinoVentaService>(entity);
-            return entity;
         }
+
     }
 }

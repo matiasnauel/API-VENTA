@@ -7,14 +7,15 @@ namespace CapaDeDominio.Entity
     public class DestinoVentaService
     {
 
-        private int id;
-        private string destino;
-        private string nombre;
-        private string descripcion;
+        public Guid id {get;set;}
 
-        public int Id { get => id; set => id = value; }
-        public string Destino { get => destino; set => destino = value; }
-        public string Nombre { get => nombre; set => nombre = value; }
-        public string Descripcion { get => descripcion; set => descripcion = value; }
+        public string destino {get;set;}
+
+        public string nombre{get;set;}
+
+        public string descripcion{get;set;}
+
+
+       
     }
 }

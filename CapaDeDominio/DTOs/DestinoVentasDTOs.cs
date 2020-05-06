@@ -6,12 +6,13 @@ namespace CapaDeDominio.DTOs
 {
    public class DestinoVentasDTOs
     {
-        private string destino;
-        private string nombre;
-        private string descripcion;
+        
 
-        public string Destino { get => destino; set => destino = value; }
-        public string Nombre { get => nombre; set => nombre = value; }
-        public string Descripcion { get => descripcion; set => descripcion = value; }
+        public string destino {get;set;}
+
+        public string nombre{get;set;}
+
+        public string descripcion{get;set;}
+
     }
 }
