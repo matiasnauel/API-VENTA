@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CapaDeDominio.DTOs
 {
-    class EstadoDTOs
+  public  class EstadoDTOs
     {
         private string nombre;
         private int id_ventaReclamo;

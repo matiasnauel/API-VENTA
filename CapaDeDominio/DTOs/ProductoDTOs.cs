@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CapaDeDominio.DTOs
 {
-    class ProductoDTOs
+  public class ProductoDTOs
     {
         private string nombre;
         private int precio;

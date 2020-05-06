@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CapaDeDominio.Entity
 {
-    public class DestinoVenta
+    public class DestinoVentaService
     {
 
         private int id;

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CapaDeDominio.DTOs
 {
-    class TipoEstadoDTOs
+    public class TipoEstadoDTOs
     {
     }
 }

@@ -14,7 +14,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using CapaAccesoDatos.Commands;
 using CapaDeAplicacion.Services;
-
+using CapaDeDominio.Entity;
 
 namespace API_Venta
 {

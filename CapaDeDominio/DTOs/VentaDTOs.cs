@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CapaDeDominio.DTOs
 {
-    class VentaDTOs
+  public  class VentaDTOs
     {
         private int id_cliente;
         private int id_carrito;

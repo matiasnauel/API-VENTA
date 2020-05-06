@@ -26,7 +26,7 @@ namespace CapaDeDominio.Entity
         public virtual ICollection<Carrito> CarritoNavigator { get; set; }
         public virtual ICollection<Estado> EstadoVentaNavigator { get; set; }
         public virtual ICollection<FormaPago> FormaPagoNavigator { get; set; }
-        public virtual ICollection<DestinoVenta> DestinoVentaNavigator { get; set; }
+        public virtual ICollection<DestinoVentaService> DestinoVentaNavigator { get; set; }
 
 
 

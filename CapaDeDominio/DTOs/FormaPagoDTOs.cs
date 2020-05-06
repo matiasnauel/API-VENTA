@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CapaDeDominio.DTOs
 {
-    class FormaPagoDTOs
+   public class FormaPagoDTOs
     {
         private string forma;
         private string descripcion;

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CapaDeDominio.DTOs
 {
-    class DestinoVentasDTOs
+   public class DestinoVentasDTOs
     {
         private string destino;
         private string nombre;
