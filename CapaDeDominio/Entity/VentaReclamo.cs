@@ -6,8 +6,8 @@ namespace CapaDeDominio.Entity
 {
    public  class VentaReclamo
     {
-        public Guid id{get;set;}
-        public string reclamo{get;set;}
+        public int Id{get;set;}
+        public string Reclamo{get;set;} 
 
        
     }

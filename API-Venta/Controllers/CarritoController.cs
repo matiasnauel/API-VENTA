@@ -15,15 +15,15 @@ namespace API_Venta.Controllers
     public class CarritoController : ControllerBase
     {
         private readonly ICarritoService _service;
-        public  CarritoController(ICarritoService service)
+        public CarritoController(ICarritoService service)
         {
             _service = service;
-           
+            
         }
         [HttpPost]
         public Carrito Post(CarritoDTOs carrito)
         {
-            return _service.CrearCarrito(carrito);
+            return _service.CreateCarrito(carrito);
         }
     }
 }

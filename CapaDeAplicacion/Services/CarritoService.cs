@@ -7,32 +7,30 @@ using System.Text;
 
 namespace CapaDeAplicacion.Services
 {
+   
     public interface ICarritoService
     {
-        Carrito CrearCarrito(CarritoDTOs carrito);
+
+
+        Carrito CreateCarrito(CarritoDTOs carrito);
     }
     public class CarritoService : ICarritoService
     {
-        private readonly IGenericsRepository _repository;
-        public CarritoService(IGenericsRepository repository)
+        private readonly IGenericRepository _repository;
+        public CarritoService(IGenericRepository repositorio)
         {
-            _repository = repository;
+            _repository = repositorio;
         }
 
-        public Carrito CrearCarrito(CarritoDTOs carrito)
+        public Carrito CreateCarrito(CarritoDTOs carrito)
         {
             var entity = new Carrito()
             {
-                id = Guid.NewGuid(),
-                id_producto = carrito.id_producto,
-                id_venta = carrito.id_venta,
-                valorcarrito = carrito.valorcarrito,
-                cantidadProducto =carrito.cantidadProducto
-
-
-            
+               
+                Valorcarrito = carrito.Valorcarrito,
+                CantidadProducto = carrito.CantidadProducto
             };
-            _repository.Add<Carrito>(entity);
+            _repository.Add(entity);
             return entity;
         }
     }

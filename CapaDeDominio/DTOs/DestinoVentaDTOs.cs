@@ -4,10 +4,11 @@ using System.Text;
 
 namespace CapaDeDominio.DTOs
 {
-    public class FormaPagoDTOs
+   public class DestinoVentaDTOs
     {
+        public string Destino { get; set; }
 
-        public string Forma { get; set; }
+        public string Nombre { get; set; }
 
         public string Descripcion { get; set; }
     }

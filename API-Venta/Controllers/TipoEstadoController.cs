@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CapaAccesoDatos.Commands;
 using CapaDeAplicacion.Services;
+using CapaDeDominio.Commands;
 using CapaDeDominio.DTOs;
 using CapaDeDominio.Entity;
 using Microsoft.AspNetCore.Http;
@@ -12,17 +14,17 @@ namespace API_Venta.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class DestinoVentaController : ControllerBase
+    public class TipoEstadoController : ControllerBase
     {
-        private readonly IDestinoVentas _service;
-        public DestinoVentaController(IDestinoVentas servicio)
+        private readonly ITipoEstadoService _service;
+        public TipoEstadoController(ITipoEstadoService servicio)
         {
             _service = servicio;
         }
         [HttpPost]
-        public DestinoVenta Post(DestinoVentaDTOs destinoventa)
+        public TipoEstado Post(TipoEstadoDTOs tipoestado)
         {
-            return _service.CreateVenta(destinoventa);
+            return _service.CrearTipoEstado(tipoestado);
         }
     }
 }

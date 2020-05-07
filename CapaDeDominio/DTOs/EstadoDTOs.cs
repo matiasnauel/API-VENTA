@@ -4,17 +4,14 @@ using System.Text;
 
 namespace CapaDeDominio.DTOs
 {
-  public  class EstadoDTOs
+    public class EstadoDTOs
     {
+        public string Nombre { get; set; }
 
-        public string nombre{get;set;}
+        public int Id_ventaReclamo { get; set; }
 
-        public int id_ventaReclamo{get;set;}
+        public int Tipoestado { get; set; }
 
-        public int tipoestado{get;set;}
-
-        public virtual ICollection<TipoEstado> TipoEstadoNavigator { get; set; }
-
-        public virtual ICollection<VentaReclamo> VentaReclamoNavigator { get; set; }
+        
     }
 }

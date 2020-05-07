@@ -6,13 +6,13 @@ namespace CapaDeDominio.Entity
 {
     public class Estado
     {
-        public Guid id {get;set;}
+        public int Id {get;set;}
 
-        public string nombre{get;set;}
+        public string Nombre{get;set;}
 
-        public Guid id_ventaReclamo{get;set;}
+        public  int Id_ventaReclamo{get;set;}
 
-        public Guid tipoestado{get;set;}
+        public int Tipoestado{get;set;}
 
         public virtual TipoEstado TipoEstadoNavigator { get; set; }
 

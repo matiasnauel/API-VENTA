@@ -6,13 +6,13 @@ namespace CapaDeDominio.Entity
 {
     public class Venta
     {
-        public Guid VentaId {get;set;}
-        public Guid id_cliente{get;set;}
-        public Guid id_carrito{get;set;}
-        public Guid fechaVenta{get;set;}
-        public Guid id_destinoventa{get;set;}
-        public Guid id_tomapago{get;set;}
-        public Guid id_estadoventa{get;set;}
+        public int VentaId {get;set;}
+        public int Id_cliente{get;set;}
+        public int Id_carrito{get;set;}
+        public int FechaVenta{get;set;}
+        public int Id_destinoventa{get;set;}
+        public int Id_tomapago{get;set;}
+        public int Id_estadoventa{get;set;}
 
           
         public virtual Carrito CarritoNavigator { get; set; }

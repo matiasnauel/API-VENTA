@@ -4,15 +4,11 @@ using System.Text;
 
 namespace CapaDeDominio.DTOs
 {
-   public  class CarritoDTOs
+    public class CarritoDTOs
     {
+        public int Id { get; set; }
+        public int Valorcarrito { get; set; }
 
-        public Guid id_producto {get;set;}
-
-        public Guid id_venta {get;set;}
-
-        public int valorcarrito {get;set;}
-
-        public int cantidadProducto {get;set;}
+        public int CantidadProducto { get; set; }
     }
 }

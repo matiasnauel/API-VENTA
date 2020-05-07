@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using CapaDeDominio.Commands;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -12,8 +11,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using CapaAccesoDatos.Commands;
+using CapaAccesoDatos;
+using CapaDeDominio.Commands;
 using CapaDeAplicacion.Services;
+using CapaAccesoDatos.Commands;
 using CapaDeDominio.Entity;
 
 namespace API_Venta
@@ -32,9 +33,15 @@ namespace API_Venta
         {
             services.AddControllers();
             var conecctionString = Configuration.GetSection("ConnectionString").Value;
-            services.AddDbContext<CapaAccesoDatos.DatoDbContext>(option => option.UseSqlServer(conecctionString));
-            services.AddTransient<IGenericsRepository, GenericsRepository >();
+            services.AddDbContext<DatoDbContext>(option => option.UseSqlServer(conecctionString));
+            services.AddTransient<IGenericRepository, GenericsRepository>();
             services.AddTransient<ICarritoService, CarritoService>();
+            services.AddTransient<IClienteService, ClienteService>();
+            services.AddTransient<IDestinoVentas,DestinoVentaService>();
+            services.AddTransient<IFormaPagoService,FormaPagoService>();
+            services.AddTransient<ITipoEstadoService, TipoEstadoService>();
+            services.AddTransient<IVentaService, VentaService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

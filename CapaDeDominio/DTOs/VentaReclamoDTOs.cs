@@ -4,9 +4,8 @@ using System.Text;
 
 namespace CapaDeDominio.DTOs
 {
-   public class VentaReclamoDTOs
+    public class VentaReclamoDTOs
     {
-       
-        public string reclamo{get;set;}
+        public string Reclamo { get; set; }
     }
 }

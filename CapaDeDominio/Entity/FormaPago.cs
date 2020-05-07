@@ -6,7 +6,7 @@ namespace CapaDeDominio.Entity
 {
    public  class FormaPago
     {
-        public Guid id {get;set;}
+        public int Id {get;set;}
 
         public string Forma{get;set;}
 
