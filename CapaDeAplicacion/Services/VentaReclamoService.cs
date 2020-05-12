@@ -11,21 +11,21 @@ namespace CapaDeAplicacion.Services
     {
         VentaReclamo CrearVentaReclamo(VentaReclamoDTOs venta);
     }
-    public class VentaReclamoService : IVentaReclamoService
+    public class VentaReclamoService/* : IVentaReclamoService*/
     {
-        private readonly IGenericRepository _repository;
-        public VentaReclamoService (IGenericRepository repositorio)
-        {
-            _repository = repositorio;
-        }
-        public VentaReclamo CrearVentaReclamo(VentaReclamoDTOs venta)
-        {
-            var entity = new VentaReclamo()
-            {
-                Reclamo = venta.Reclamo
-            };
-            _repository.Add(entity);
-            return entity;
-        }
+        //private readonly IGenericRepository _repository;
+        //public VentaReclamoService (IGenericRepository repositorio)
+        //{
+        //    _repository = repositorio;
+        //}
+        //public VentaReclamo CrearVentaReclamo(VentaReclamoDTOs venta)
+        //{
+        //    var entity = new VentaReclamo()
+        //    {
+        //        Reclamo = venta.Reclamo
+        //    };
+        //    _repository.Add(entity);
+        //    return entity;
+        //}
     }
 }

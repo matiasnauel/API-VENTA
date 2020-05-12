@@ -13,24 +13,24 @@ namespace CapaDeAplicacion.Services
     {
         DestinoVenta CreateVenta(DestinoVentaDTOs destinoventa);
     }
-    public class DestinoVentaService :IDestinoVentas 
+    public class DestinoVentaService/* :IDestinoVentas */
     {
-        private readonly IGenericRepository _repository;
+        //private readonly IGenericRepository _repository;
 
-        public DestinoVentaService(IGenericRepository repositorio)
-        {
-            _repository = repositorio;
-        }
-        public DestinoVenta CreateVenta(DestinoVentaDTOs destinoventa)
-        {
-            var entity = new DestinoVenta()
-            {
-                Destino = destinoventa.Destino,
-                Nombre = destinoventa.Nombre,
-                Descripcion = destinoventa.Descripcion
-            };
-            _repository.Add(entity);
-            return entity;
-        }
+        //public DestinoVentaService(IGenericRepository repositorio)
+        //{
+        //    _repository = repositorio;
+        //}
+        //public DestinoVenta CreateVenta(DestinoVentaDTOs destinoventa)
+        //{
+        //    var entity = new DestinoVenta()
+        //    {
+        //        Destino = destinoventa.Destino,
+        //        Nombre = destinoventa.Nombre,
+        //        Descripcion = destinoventa.Descripcion
+        //    };
+        //    _repository.Add(entity);
+        //    return entity;
+        //}
     }
 }

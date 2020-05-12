@@ -11,25 +11,25 @@ namespace CapaDeAplicacion.Services
     {
         Cliente CreateCliente(ClienteDTOs cliente);
     }
-    public class ClienteService : IClienteService
+    public class ClienteService /*: IClienteService*/
 
     {
-        private readonly IGenericRepository _repository;
-        public ClienteService (IGenericRepository repositorio)
-        {
-            _repository = repositorio;
-        }
-        public Cliente CreateCliente(ClienteDTOs cliente)
-        {
-            var entity = new Cliente()
-            {
-                Nombre = cliente.Nombre,
-                Apellido = cliente.Apellido,
-                Email= cliente.Email,
-                Activo= cliente.Activo
-            };
-            _repository.Add(entity);
-            return entity;
-        }
+        //private readonly IGenericRepository _repository;
+        //public ClienteService (IGenericRepository repositorio)
+        //{
+        //    _repository = repositorio;
+        //}
+        //public Cliente CreateCliente(ClienteDTOs cliente)
+        //{
+        //    var entity = new Cliente()
+        //    {
+        //        Nombre = cliente.Nombre,
+        //        Apellido = cliente.Apellido,
+        //        Email= cliente.Email,
+        //        Activo= cliente.Activo
+        //    };
+        //    _repository.Add(entity);
+        //    return entity;
+        //}
     }
 }

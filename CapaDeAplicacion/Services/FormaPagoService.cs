@@ -11,22 +11,24 @@ namespace CapaDeAplicacion.Services
     {
         FormaPago CreatePagos(FormaPagoDTOs formapago);
     }
-    public class FormaPagoService : IFormaPagoService
+    public class FormaPagoService /*: IFormaPagoService*/
     {
-        private readonly IGenericRepository _repository;
-        public FormaPagoService(IGenericRepository repositorio)
-        {
-            _repository = repositorio;
-        }
-        public FormaPago CreateFormaPago(FormaPago formapago)
-        {
-            var entity = new FormaPago()
-            {
-                Forma = formapago.Forma,
-                Descripcion = formapago.Descripcion
-            };
-            _repository.Add(entity);
-            return entity;
-        }
+        //private readonly IGenericRepository _repository;
+        //public FormaPagoService(IGenericRepository repositorio)
+        //{
+        //    _repository = repositorio;
+        //}
+        //public FormaPago CreatePagos(FormaPagoDTOs formapago)
+        //{
+        //    var entity = new FormaPago()
+        //    {
+        //        Forma = formapago.Forma,
+        //        Descripcion = formapago.Descripcion
+        //    };
+        //    _repository.Add(entity);
+        //    return entity;
+        //}
+
+        
     }
 }

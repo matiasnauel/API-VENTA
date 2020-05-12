@@ -9,6 +9,5 @@ namespace CapaDeDominio.Entity
         public int Id{get;set;}
         public string Reclamo{get;set;} 
 
-       
     }
 }

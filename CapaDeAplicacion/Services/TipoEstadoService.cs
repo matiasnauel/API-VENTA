@@ -11,22 +11,22 @@ namespace CapaDeAplicacion.Services
     {
         TipoEstado CrearTipoEstado(TipoEstadoDTOs tipo);
     }
-   public class TipoEstadoService : ITipoEstadoService
+   public class TipoEstadoService /*: ITipoEstadoService*/
     {
-        private IGenericRepository _repository;
-        public TipoEstadoService(IGenericRepository repositorio)
-        {
-            _repository = repositorio;
-        }
+        //private IGenericRepository _repository;
+        //public TipoEstadoService(IGenericRepository repositorio)
+        //{
+        //    _repository = repositorio;
+        //}
 
-        public TipoEstado CrearTipoEstado(TipoEstadoDTOs tipo)
-        {
-            var entity = new TipoEstado()
-            {
-                Tipo = tipo.Tipo
-            };
-            _repository.Add(entity);
-            return entity;
-        }
+        //public TipoEstado CrearTipoEstado(TipoEstadoDTOs tipo)
+        //{
+        //    var entity = new TipoEstado()
+        //    {
+        //        Tipo = tipo.Tipo
+        //    };
+        //    _repository.Add(entity);
+        //    return entity;
+        //}
     }
 }

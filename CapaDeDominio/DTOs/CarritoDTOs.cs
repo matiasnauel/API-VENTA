@@ -8,7 +8,6 @@ namespace CapaDeDominio.DTOs
     {
         public int Id { get; set; }
         public int Valorcarrito { get; set; }
-
         public int CantidadProducto { get; set; }
     }
 }
