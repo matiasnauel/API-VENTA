@@ -19,51 +19,6 @@ namespace CapaAccesoDatos.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("CapaDeDominio.Entity.Carrito", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("CantidadProducto")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Valorcarrito")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Carritos");
-                });
-
-            modelBuilder.Entity("CapaDeDominio.Entity.Cliente", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<byte>("Activo")
-                        .HasColumnType("tinyint");
-
-                    b.Property<string>("Apellido")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Contraseña")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Nombre")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Clientes");
-                });
-
             modelBuilder.Entity("CapaDeDominio.Entity.DestinoVenta", b =>
                 {
                     b.Property<int>("Id")
@@ -141,6 +96,9 @@ namespace CapaAccesoDatos.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("Tipo")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("TipoEstados");
@@ -153,20 +111,14 @@ namespace CapaAccesoDatos.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("CarritoNavigatorId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("ClienteNavigatorId")
-                        .HasColumnType("int");
-
                     b.Property<int?>("DestinoVentaNavigatorId")
                         .HasColumnType("int");
 
                     b.Property<int?>("EstadoVentaNavigatorId")
                         .HasColumnType("int");
 
-                    b.Property<int>("FechaVenta")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("FechaVenta")
+                        .HasColumnType("datetime2");
 
                     b.Property<int?>("FormaPagoNavigatorId")
                         .HasColumnType("int");
@@ -187,10 +139,6 @@ namespace CapaAccesoDatos.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("VentaId");
-
-                    b.HasIndex("CarritoNavigatorId");
-
-                    b.HasIndex("ClienteNavigatorId");
 
                     b.HasIndex("DestinoVentaNavigatorId");
 
@@ -229,14 +177,6 @@ namespace CapaAccesoDatos.Migrations
 
             modelBuilder.Entity("CapaDeDominio.Entity.Venta", b =>
                 {
-                    b.HasOne("CapaDeDominio.Entity.Carrito", "CarritoNavigator")
-                        .WithMany()
-                        .HasForeignKey("CarritoNavigatorId");
-
-                    b.HasOne("CapaDeDominio.Entity.Cliente", "ClienteNavigator")
-                        .WithMany()
-                        .HasForeignKey("ClienteNavigatorId");
-
                     b.HasOne("CapaDeDominio.Entity.DestinoVenta", "DestinoVentaNavigator")
                         .WithMany()
                         .HasForeignKey("DestinoVentaNavigatorId");

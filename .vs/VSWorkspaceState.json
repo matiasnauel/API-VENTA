@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\API-Venta",
-    "\\CapaDeDominio",
     "\\CapaDeDominio\\Entity"
   ],
-  "SelectedNode": "\\CapaDeDominio\\Entity\\Carrito.cs",
+  "SelectedNode": "\\API-Venta\\API-Venta.sln",
   "PreviewInSolutionExplorer": false
 }

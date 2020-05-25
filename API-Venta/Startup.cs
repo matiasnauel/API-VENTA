@@ -35,12 +35,14 @@ namespace API_Venta
             var conecctionString = Configuration.GetSection("ConnectionString").Value;
             services.AddDbContext<DatoDbContext>(option => option.UseSqlServer(conecctionString));
             services.AddTransient<IGenericRepository, GenericsRepository>();
-            services.AddTransient<ICarritoService, CarritoService>();
-            //services.AddTransient<IClienteService, ClienteService>();
-            //services.AddTransient<IDestinoVentas,DestinoVentaService>();
-            //services.AddTransient<IFormaPagoService,FormaPagoService>();
-            //services.AddTransient<ITipoEstadoService, TipoEstadoService>();
-            //services.AddTransient<IVentaService, VentaService>();
+      
+            services.AddTransient<IDestinoVentas, DestinoVentaService>();
+            services.AddTransient<IFormaPagoService, FormaPagoService>();
+            services.AddTransient<ITipoEstadoService, TipoEstadoService>();
+            services.AddTransient<IVentaService, VentaService>();
+            services.AddTransient<IVentaReclamoService, VentaReclamoService>();
+            services.AddTransient<IEstado, EstadoService>();
+
 
         }
 

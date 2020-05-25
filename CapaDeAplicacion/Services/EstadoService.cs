@@ -11,23 +11,29 @@ namespace CapaDeAplicacion.Services
     {
         Estado CreateEstado(EstadoDTOs estado);
     }
-    public class EstadoService /*: IEstado*/
+    public class EstadoService : IEstado
     {
-        //private readonly IGenericRepository _repository;
-        //public EstadoService(IGenericRepository repositorio)
-        //{
-        //    _repository = repositorio;
-        //}
-        //public Estado CreateEstado(EstadoDTOs estado)
-        //{
-        //    var entity = new Estado()
-        //    {
-        //        Nombre = estado.Nombre,
-        //        Id_ventaReclamo = estado.Id_ventaReclamo,
-        //        Tipoestado= estado.Tipoestado
-        //    };
-        //    _repository.Add(entity);
-        //    return entity;
-        //}
+        private readonly IGenericRepository _repository;
+        public EstadoService(IGenericRepository repositorio)
+        {
+            _repository = repositorio;
+        }
+        public Estado CreateEstado(EstadoDTOs estado)
+        {
+
+            TipoEstado navigatorTipoEstado = _repository.GetBy<TipoEstado>(estado.Tipoestado);
+            VentaReclamo navigatorReclamo = _repository.GetBy<VentaReclamo>(estado.Id_ventaReclamo);
+            var entity = new Estado()
+            {
+                Nombre = estado.Nombre,
+                Id_ventaReclamo = estado.Id_ventaReclamo,
+                Tipoestado = estado.Tipoestado,
+                TipoEstadoNavigator = navigatorTipoEstado,
+                VentaReclamoNavigator = navigatorReclamo
+               
+            };
+            _repository.Add(entity);
+            return entity;
+        }
     }
 }

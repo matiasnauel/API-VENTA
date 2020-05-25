@@ -6,6 +6,7 @@ namespace CapaDeDominio.DTOs
 {
    public class TipoEstadoDTOs
     {
+        public int Id { get; set; }
         public string Tipo { get; set; }
     }
 }

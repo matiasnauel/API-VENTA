@@ -22,9 +22,69 @@ namespace API_Venta.Controllers
         }
         [HttpPost]
         
-        public Venta Post(VentaDTOs venta)
+        public IActionResult Post(VentaDTOs venta)
         {
-            return _servicio.CrearVenta(venta);
+            try
+            {
+                return new JsonResult(_servicio.CrearVenta(venta)) { StatusCode = 201};
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+        [HttpGet]
+        public IActionResult Get()
+        {
+            try
+            {
+                return new JsonResult(_servicio.GetVenta()) { StatusCode = 200 };
+            }
+            catch (Exception e)
+            {
+
+                return BadRequest(e.Message);
+            }
+        }
+        [HttpDelete]
+        public IActionResult Delete(VentaDTOs venta)
+        {
+            try
+            {
+                return new JsonResult(_servicio.DeleteVenta(venta)) { StatusCode = 200 };
+            }
+            catch (Exception e)
+            {
+
+                return BadRequest(e.Message);
+            }
+        }
+        [HttpPut]
+        public IActionResult Update(VentaDTOs venta)
+        {
+            try
+            {
+                return new JsonResult(_servicio.UpdateVenta(venta)) { StatusCode = 200 };
+            }
+            catch (Exception e)
+            {
+
+                return BadRequest(e.Message);
+            }
+        }
+        [HttpGet("getID")]
+        public IActionResult getID([FromQuery]int id)
+        {
+            try
+            {
+                return new JsonResult(_servicio.GetId(id)) { StatusCode = 200 };
+            }
+            catch (Exception e)
+            {
+
+                return BadRequest(e.Message);
+            }
         }
     }
 }

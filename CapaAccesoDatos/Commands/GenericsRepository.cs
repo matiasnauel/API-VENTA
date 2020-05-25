@@ -33,10 +33,19 @@ namespace CapaAccesoDatos.Commands
             _context.SaveChanges();
         }
 
-        public void Delete<T>(T entity) where T : class
+        public bool Delete<T>(T entity) where T : class
         {
-            _context.Set<T>().Remove(entity);
-            _context.SaveChanges();
+            if(entity != null )
+            {
+                _context.Set<T>().Remove(entity);
+                _context.SaveChanges();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+         
             
         }
 
@@ -55,12 +64,19 @@ namespace CapaAccesoDatos.Commands
         }
        
 
-
-
-        public void Update<T>(T entity) where T : class
+        public bool Update<T>(T entity) where T : class
         {
-            _context.Entry(entity).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
-            _context.SaveChanges();
+            if(entity != null)
+            {
+                _context.Entry(entity).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                _context.SaveChanges();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+            
         }
 
         

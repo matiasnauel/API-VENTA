@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace CapaAccesoDatos.Migrations
 {
@@ -6,37 +7,6 @@ namespace CapaAccesoDatos.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.CreateTable(
-                name: "Carritos",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Valorcarrito = table.Column<int>(nullable: false),
-                    CantidadProducto = table.Column<int>(nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Carritos", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Clientes",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Nombre = table.Column<string>(nullable: true),
-                    Apellido = table.Column<string>(nullable: true),
-                    Email = table.Column<string>(nullable: true),
-                    Activo = table.Column<byte>(nullable: false),
-                    Contraseña = table.Column<string>(nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Clientes", x => x.Id);
-                });
-
             migrationBuilder.CreateTable(
                 name: "DestinoVentas",
                 columns: table => new
@@ -71,7 +41,8 @@ namespace CapaAccesoDatos.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1")
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Tipo = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -128,31 +99,17 @@ namespace CapaAccesoDatos.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Id_cliente = table.Column<int>(nullable: false),
                     Id_carrito = table.Column<int>(nullable: false),
-                    FechaVenta = table.Column<int>(nullable: false),
+                    FechaVenta = table.Column<DateTime>(nullable: false),
                     Id_destinoventa = table.Column<int>(nullable: false),
                     Id_tomapago = table.Column<int>(nullable: false),
                     Id_estadoventa = table.Column<int>(nullable: false),
-                    CarritoNavigatorId = table.Column<int>(nullable: true),
                     EstadoVentaNavigatorId = table.Column<int>(nullable: true),
                     FormaPagoNavigatorId = table.Column<int>(nullable: true),
-                    DestinoVentaNavigatorId = table.Column<int>(nullable: true),
-                    ClienteNavigatorId = table.Column<int>(nullable: true)
+                    DestinoVentaNavigatorId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Ventas", x => x.VentaId);
-                    table.ForeignKey(
-                        name: "FK_Ventas_Carritos_CarritoNavigatorId",
-                        column: x => x.CarritoNavigatorId,
-                        principalTable: "Carritos",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Ventas_Clientes_ClienteNavigatorId",
-                        column: x => x.ClienteNavigatorId,
-                        principalTable: "Clientes",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Ventas_DestinoVentas_DestinoVentaNavigatorId",
                         column: x => x.DestinoVentaNavigatorId,
@@ -184,16 +141,6 @@ namespace CapaAccesoDatos.Migrations
                 column: "VentaReclamoNavigatorId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Ventas_CarritoNavigatorId",
-                table: "Ventas",
-                column: "CarritoNavigatorId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Ventas_ClienteNavigatorId",
-                table: "Ventas",
-                column: "ClienteNavigatorId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Ventas_DestinoVentaNavigatorId",
                 table: "Ventas",
                 column: "DestinoVentaNavigatorId");
@@ -213,12 +160,6 @@ namespace CapaAccesoDatos.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Ventas");
-
-            migrationBuilder.DropTable(
-                name: "Carritos");
-
-            migrationBuilder.DropTable(
-                name: "Clientes");
 
             migrationBuilder.DropTable(
                 name: "DestinoVentas");

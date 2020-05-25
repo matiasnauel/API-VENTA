@@ -22,9 +22,69 @@ namespace API_Venta.Controllers
             _service = servicio;
         }
         [HttpPost]
-        public TipoEstado Post(TipoEstadoDTOs tipoestado)
+        public IActionResult Post(TipoEstadoDTOs tipoestado)
         {
-            return _service.CrearTipoEstado(tipoestado);
+            try
+            {
+                return new JsonResult(_service.CrearTipoEstado(tipoestado)) { StatusCode = 201 };
+            }
+            catch (Exception e)
+            {
+
+                return BadRequest(e.Message);
+            }
+        }
+        [HttpGet]
+        public IActionResult Get()
+        {
+            try
+            {
+                return new JsonResult(_service.GetTipoEstado()) { StatusCode = 200 };
+            }
+            catch (Exception e)
+            {
+
+                return BadRequest(e.Message);
+            }
+        }
+        [HttpDelete]
+        public IActionResult Delete(TipoEstadoDTOs tipoestado)
+        {
+            try
+            {
+                return new JsonResult(_service.DeleteTipoEstado(tipoestado)) { StatusCode = 200 };
+            }
+            catch (Exception e)
+            {
+
+                return BadRequest(e.Message);
+            }
+        }
+        [HttpPut]
+        public IActionResult Update(TipoEstadoDTOs tipoestado)
+        {
+            try
+            {
+                return new JsonResult(_service.UpdateEstado(tipoestado)) { StatusCode = 200 };
+            }
+            catch (Exception e)
+            {
+
+                return BadRequest(e.Message);
+            }
+        }
+        [HttpGet("getID")]
+        public IActionResult getID([FromQuery]int id)
+        {
+            try
+            {
+                return new JsonResult(_service.GetId(id)) { StatusCode = 200 };
+            }
+            catch (Exception e)
+            {
+
+                return BadRequest(e.Message);
+            }
         }
     }
 }
