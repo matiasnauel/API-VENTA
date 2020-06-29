@@ -16,6 +16,11 @@ using CapaDeDominio.Commands;
 using CapaDeAplicacion.Services;
 using CapaAccesoDatos.Commands;
 using CapaDeDominio.Entity;
+using CapaAccesoDatos.Queries;
+using CapaDeDominio.Queries;
+using System.Data;
+using System.Data.SqlClient;
+using SqlKata.Compilers;
 
 namespace API_Venta
 {
@@ -35,13 +40,25 @@ namespace API_Venta
             var conecctionString = Configuration.GetSection("ConnectionString").Value;
             services.AddDbContext<DatoDbContext>(option => option.UseSqlServer(conecctionString));
             services.AddTransient<IGenericRepository, GenericsRepository>();
-      
+            //SQL kata
+            services.AddTransient<Compiler, SqlServerCompiler>();
+            services.AddTransient<IDbConnection>(b =>
+            {
+                return new SqlConnection(conecctionString);
+            });
+            services.AddControllersWithViews()
+            .AddNewtonsoftJson(options =>
+             options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+            );
+
             services.AddTransient<IDestinoVentas, DestinoVentaService>();
             services.AddTransient<IFormaPagoService, FormaPagoService>();
             services.AddTransient<ITipoEstadoService, TipoEstadoService>();
             services.AddTransient<IVentaService, VentaService>();
             services.AddTransient<IVentaReclamoService, VentaReclamoService>();
             services.AddTransient<IEstado, EstadoService>();
+            services.AddTransient<IQueryVenta, QueryVenta>();
+  
 
 
         }

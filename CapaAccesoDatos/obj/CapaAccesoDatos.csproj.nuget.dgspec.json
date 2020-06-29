@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ayala\\source\\repos\\matiasnauel\\API-VENTA\\CapaAccesoDatos\\CapaAccesoDatos.csproj": {}
+    "C:\\Users\\ayala\\Source\\Repos\\matiasnauel\\API-VENTA\\CapaAccesoDatos\\CapaAccesoDatos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ayala\\source\\repos\\matiasnauel\\API-VENTA\\CapaAccesoDatos\\CapaAccesoDatos.csproj": {
+    "C:\\Users\\ayala\\Source\\Repos\\matiasnauel\\API-VENTA\\CapaAccesoDatos\\CapaAccesoDatos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ayala\\source\\repos\\matiasnauel\\API-VENTA\\CapaAccesoDatos\\CapaAccesoDatos.csproj",
+        "projectUniqueName": "C:\\Users\\ayala\\Source\\Repos\\matiasnauel\\API-VENTA\\CapaAccesoDatos\\CapaAccesoDatos.csproj",
         "projectName": "CapaAccesoDatos",
-        "projectPath": "C:\\Users\\ayala\\source\\repos\\matiasnauel\\API-VENTA\\CapaAccesoDatos\\CapaAccesoDatos.csproj",
+        "projectPath": "C:\\Users\\ayala\\Source\\Repos\\matiasnauel\\API-VENTA\\CapaAccesoDatos\\CapaAccesoDatos.csproj",
         "packagesPath": "C:\\Users\\ayala\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ayala\\source\\repos\\matiasnauel\\API-VENTA\\CapaAccesoDatos\\obj\\",
+        "outputPath": "C:\\Users\\ayala\\Source\\Repos\\matiasnauel\\API-VENTA\\CapaAccesoDatos\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\ayala\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -30,11 +27,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\ayala\\source\\repos\\matiasnauel\\API-VENTA\\CapaDeAplicacion\\CapaDeAplicacion.csproj": {
-                "projectPath": "C:\\Users\\ayala\\source\\repos\\matiasnauel\\API-VENTA\\CapaDeAplicacion\\CapaDeAplicacion.csproj"
+              "C:\\Users\\ayala\\Source\\Repos\\matiasnauel\\API-VENTA\\CapaDeAplicacion\\CapaDeAplicacion.csproj": {
+                "projectPath": "C:\\Users\\ayala\\Source\\Repos\\matiasnauel\\API-VENTA\\CapaDeAplicacion\\CapaDeAplicacion.csproj"
               },
-              "C:\\Users\\ayala\\source\\repos\\matiasnauel\\API-VENTA\\CapaDeDominio\\CapaDeDominio.csproj": {
-                "projectPath": "C:\\Users\\ayala\\source\\repos\\matiasnauel\\API-VENTA\\CapaDeDominio\\CapaDeDominio.csproj"
+              "C:\\Users\\ayala\\Source\\Repos\\matiasnauel\\API-VENTA\\CapaDeDominio\\CapaDeDominio.csproj": {
+                "projectPath": "C:\\Users\\ayala\\Source\\Repos\\matiasnauel\\API-VENTA\\CapaDeDominio\\CapaDeDominio.csproj"
               }
             }
           }
@@ -50,25 +47,25 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[3.1.5, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[3.1.5, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[3.1.5, )"
             },
             "SqlKata": {
               "target": "Package",
-              "version": "[1.1.7, )"
+              "version": "[2.2.0, )"
             },
             "SqlKata.Execution": {
               "target": "Package",
-              "version": "[1.1.7, )"
+              "version": "[2.2.0, )"
             }
           },
           "imports": [
@@ -81,27 +78,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ayala\\source\\repos\\matiasnauel\\API-VENTA\\CapaDeAplicacion\\CapaDeAplicacion.csproj": {
+    "C:\\Users\\ayala\\Source\\Repos\\matiasnauel\\API-VENTA\\CapaDeAplicacion\\CapaDeAplicacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ayala\\source\\repos\\matiasnauel\\API-VENTA\\CapaDeAplicacion\\CapaDeAplicacion.csproj",
+        "projectUniqueName": "C:\\Users\\ayala\\Source\\Repos\\matiasnauel\\API-VENTA\\CapaDeAplicacion\\CapaDeAplicacion.csproj",
         "projectName": "CapaDeAplicacion",
-        "projectPath": "C:\\Users\\ayala\\source\\repos\\matiasnauel\\API-VENTA\\CapaDeAplicacion\\CapaDeAplicacion.csproj",
+        "projectPath": "C:\\Users\\ayala\\Source\\Repos\\matiasnauel\\API-VENTA\\CapaDeAplicacion\\CapaDeAplicacion.csproj",
         "packagesPath": "C:\\Users\\ayala\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ayala\\source\\repos\\matiasnauel\\API-VENTA\\CapaDeAplicacion\\obj\\",
+        "outputPath": "C:\\Users\\ayala\\Source\\Repos\\matiasnauel\\API-VENTA\\CapaDeAplicacion\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\ayala\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -116,8 +116,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\ayala\\source\\repos\\matiasnauel\\API-VENTA\\CapaDeDominio\\CapaDeDominio.csproj": {
-                "projectPath": "C:\\Users\\ayala\\source\\repos\\matiasnauel\\API-VENTA\\CapaDeDominio\\CapaDeDominio.csproj"
+              "C:\\Users\\ayala\\Source\\Repos\\matiasnauel\\API-VENTA\\CapaDeDominio\\CapaDeDominio.csproj": {
+                "projectPath": "C:\\Users\\ayala\\Source\\Repos\\matiasnauel\\API-VENTA\\CapaDeDominio\\CapaDeDominio.csproj"
               }
             }
           }
@@ -146,27 +146,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ayala\\source\\repos\\matiasnauel\\API-VENTA\\CapaDeDominio\\CapaDeDominio.csproj": {
+    "C:\\Users\\ayala\\Source\\Repos\\matiasnauel\\API-VENTA\\CapaDeDominio\\CapaDeDominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ayala\\source\\repos\\matiasnauel\\API-VENTA\\CapaDeDominio\\CapaDeDominio.csproj",
+        "projectUniqueName": "C:\\Users\\ayala\\Source\\Repos\\matiasnauel\\API-VENTA\\CapaDeDominio\\CapaDeDominio.csproj",
         "projectName": "CapaDeDominio",
-        "projectPath": "C:\\Users\\ayala\\source\\repos\\matiasnauel\\API-VENTA\\CapaDeDominio\\CapaDeDominio.csproj",
+        "projectPath": "C:\\Users\\ayala\\Source\\Repos\\matiasnauel\\API-VENTA\\CapaDeDominio\\CapaDeDominio.csproj",
         "packagesPath": "C:\\Users\\ayala\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ayala\\source\\repos\\matiasnauel\\API-VENTA\\CapaDeDominio\\obj\\",
+        "outputPath": "C:\\Users\\ayala\\Source\\Repos\\matiasnauel\\API-VENTA\\CapaDeDominio\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\ayala\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -201,12 +204,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

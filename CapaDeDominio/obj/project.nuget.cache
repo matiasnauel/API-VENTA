@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ypmvSWUCwteTba/K0taPpOOv9MousD2eOjexljQt6+xlWi3pRJAE/JiS4y2E/P0vSUEv+qU1bUwLgB9ROdgWPQ==",
+  "dgSpecHash": "aQwxhJ1oqEJQNobzVSkNjFlgNRGifZuIVqJbrYAy5Pljr5/bcviwBzhKoeC8pB3FVJja4gUyW2kRLGlgGuSnfw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ayala\\source\\repos\\matiasnauel\\API-VENTA\\CapaDeDominio\\CapaDeDominio.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\ayala\\Source\\Repos\\matiasnauel\\API-VENTA\\CapaDeDominio\\CapaDeDominio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ayala\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
   "logs": []
 }

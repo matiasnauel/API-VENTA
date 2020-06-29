@@ -1,10 +1,12 @@
 ﻿using CapaDeDominio.Commands;
 using CapaDeDominio.DTOs;
 using CapaDeDominio.Entity;
+using CapaDeDominio.Queries;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace CapaDeAplicacion.Services
 {
@@ -16,15 +18,26 @@ namespace CapaDeAplicacion.Services
         ICollection<Venta> GetVenta();
         bool DeleteVenta(VentaDTOs venta);
         bool UpdateVenta(VentaDTOs venta);
+        Task<List<ClienteDTOs>> GetCliente();
+
         Venta GetId(int id);
     }
     public class VentaService : IVentaService
     {
         private readonly IGenericRepository _repository;
-        public VentaService(IGenericRepository repositorio)
+        private readonly IQueryVenta query;
+
+        public VentaService(IGenericRepository repository)
         {
-            _repository = repositorio;
+            _repository = repository;
         }
+
+        public VentaService(IGenericRepository repository, IQueryVenta query)
+        {
+            _repository = repository;
+            this.query = query;
+        }
+
         public Venta CrearVenta(VentaDTOs venta)
         {
             var EstadoNavigator = _repository.GetBy<Estado>(venta.Id_estadoventa);
@@ -82,6 +95,11 @@ namespace CapaDeAplicacion.Services
         public Venta GetId(int id)
         {
             return _repository.GetBy<Venta>(id);
+        }
+
+        public Task<List<ClienteDTOs>> GetCliente()
+        {
+           return  query.GetCliente();
         }
     }
 }

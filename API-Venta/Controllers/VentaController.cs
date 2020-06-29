@@ -86,5 +86,18 @@ namespace API_Venta.Controllers
                 return BadRequest(e.Message);
             }
         }
+        [HttpGet("getCliente")]
+        public IActionResult getCliente()
+        {
+            try
+            {
+                return new JsonResult(_servicio.GetCliente()) { StatusCode = 200 };
+            }
+            catch (Exception e)
+            {
+
+                return BadRequest(e.Message);
+            }
+        }
     }
 }
